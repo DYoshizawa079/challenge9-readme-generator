@@ -1,27 +1,27 @@
 # Myapp
 ## Description
-Mydesc
+Danieldesc
 
-Deplyoment URL: [www.google.com](www.google.com)
+Deplyoment URL: [https://test.ca](https://test.ca)
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Credits/Contributing](#credits)
+* [Credits/Contributors](#credits)
 * [Testing](#testing)
 * [Questions](#questions)
 ## Installation
-Myinstall
+Danielinst
 ## Usage
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-Myuse
-![The app in use](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Vought_F4U_Corsair_%28USMC%29.jpg/300px-Vought_F4U_Corsair_%28USMC%29.jpg)
+Danieluse
+
+![The app in use](https://www.1999.co.jp/itbig64/10643427p_m.jpg)
 ## License
-ISC,Mozilla Public License 2.0
-## Credits
+MIT,ISC
+## Credits/Contributors
 Daniel
 ## Testing
-Mytest
+Dantet
 ## Questions
 If you have any further questions, please contact the author at:
 - Email: [daniel@daniel.com](mailto:daniel@daniel.com)

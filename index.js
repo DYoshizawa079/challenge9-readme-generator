@@ -61,7 +61,8 @@ inquirer.prompt([
         message: "What's the email address that should be contacted for further information?"
     }
 ])
-.then(response => fs.writeFile("README.md", `# ${response.Title}
+.then( function (response) {
+     fs.writeFile("README.md", `# ${response.Title}
 ## Description
 ${response.Description}
 
@@ -91,4 +92,5 @@ If you have any further questions, please contact the author at:
 - Github URL: [https://github.com/${response.Github_name}](https://github.com/${response.Github_name})
 `, error => {
     if (error) throw error
-}))
+})
+})
