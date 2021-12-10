@@ -17,7 +17,7 @@ inquirer.prompt([
     {
         type: "input",
         name: "Deployment",
-        message: "Give the URL of the deployed application."
+        message: "Give the URL of the deployed application. Please ensure it starts with 'https://'."
     },
     {
         type: "input",
@@ -70,23 +70,24 @@ Deplyoment URL: [${response.Deployment}](${response.Deployment})
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Credits/Contributing](#credits)
+* [Credits/Contributors](#credits)
 * [Testing](#testing)
 * [Questions](#questions)
 ## Installation
 ${response.Installation}
 ## Usage
 ${response.Usage}
-!([The app in use](${response.Usage_screenshot})
+
+![The app in use](${response.Usage_screenshot})
 ## License
 ${response.License}
-## Credits
+## Credits/Contributors
 ${response.Credits}
 ## Testing
 ${response.Testing}
 ## Questions
 If you have any further questions, please contact the author at:
-- Email: [${response.Email}](${response.Email})
+- Email: [${response.Email}](mailto:${response.Email})
 - Github URL: [https://github.com/${response.Github_name}](https://github.com/${response.Github_name})
 `, error => {
     if (error) throw error
