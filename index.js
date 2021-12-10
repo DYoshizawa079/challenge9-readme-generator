@@ -76,6 +76,13 @@ inquirer.prompt([
                     break;
                 case "Mozilla Public License 2.0":
                     badges += "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) ";
+                    break;
+                case "GNU General Public v2.0":
+                    badges += "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) ";
+                    break;
+                case "GNU General Public v3.0":
+                    badges += "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ";
+                    break;
                 default:
             }
         }
