@@ -77,7 +77,7 @@ Deplyoment URL: [${response.Deployment}](${response.Deployment})
 ${response.Installation}
 ## Usage
 ${response.Usage}
-!([The app in use]${response.Usage_screenshot})
+!([The app in use](${response.Usage_screenshot})
 ## License
 ${response.License}
 ## Credits
