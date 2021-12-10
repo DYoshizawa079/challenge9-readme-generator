@@ -16,11 +16,6 @@ inquirer.prompt([
     },
     {
         type: "input",
-        name: "Deployment",
-        message: "Give the URL of the deployed application. Please ensure it starts with 'https://'."
-    },
-    {
-        type: "input",
         name: "Installation",
         message: "Give a description of how your project/application will be installed."
     },
@@ -28,11 +23,6 @@ inquirer.prompt([
         type: "input",
         name: "Usage",
         message: "Give an example of how your project/applicaiton will be used."
-    },
-    {
-        type: "input",
-        name: "Usage_screenshot",
-        message: "Give a URL that shows a screenshot of the project."
     },
     {
         type: "checkbox",
@@ -59,14 +49,58 @@ inquirer.prompt([
         type: "input",
         name: "Email",
         message: "What's the email address that should be contacted for further information?"
+    },
+    {
+        type: "input",
+        name: "Deployment",
+        message: "OPTIONAL: Give the URL of the deployed application. If there's none, leave it blank. Otherwise, please ensure it starts with 'https://'."
+    },
+    {
+        type: "input",
+        name: "Usage_screenshot",
+        message: "OPTIONAL: Give a URL that shows a screenshot of the project. If there's none, leave it blank."
     }
 ])
 .then( function (response) {
-     fs.writeFile("README.md", `# ${response.Title}
+
+    // Specify badges
+    let badges = "";
+    response.License.forEach(
+        function getBadge(license) {
+            switch(license) {
+                case "MIT":
+                    badges += "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ";
+                    break;
+                case "ISC":
+                    badges += "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) ";
+                    break;
+                case "Mozilla Public License 2.0":
+                    badges += "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) ";
+                default:
+            }
+        }
+    );
+
+    // Specify whether there is a deployment URL
+    let deploymentURL = "";
+    if(response.Deployment) {
+        deploymentURL = "Deployment URL: ";
+        deploymentURL += "[" + response.Deployment + "](" + response.Deployment + ")";
+    }
+
+    // Specify whether there is a usage screenshot
+    let screenshot = "";
+    if(response.Usage_screenshot) {
+        screenshot = "![The app in use](" + response.Usage_screenshot + ")";
+    }
+
+    // Generate the README.MD file
+    fs.writeFile("README.md", `# ${response.Title}
+${badges}
 ## Description
 ${response.Description}
 
-Deplyoment URL: [${response.Deployment}](${response.Deployment})
+${deploymentURL}
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -79,7 +113,7 @@ ${response.Installation}
 ## Usage
 ${response.Usage}
 
-![The app in use](${response.Usage_screenshot})
+${screenshot}
 ## License
 ${response.License}
 ## Credits/Contributors
