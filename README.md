@@ -18,7 +18,7 @@ You can use this application from your local machine to generate a README.MD fil
 
 ![](/usage_sample.png)
 
-![](usage_demo.mp4)
+![](/usage_demo.mp4)
 ## License
 No License
 ## Credits/Contributors
