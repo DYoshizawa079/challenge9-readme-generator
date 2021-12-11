@@ -88,6 +88,9 @@ inquirer.prompt([
         }
     );
 
+    // Adjust formatting for text that shows the License
+    let licenseList = response.License.join(", ");
+
     // Specify whether there is a deployment URL
     let deploymentURL = "";
     if(response.Deployment) {
@@ -122,7 +125,7 @@ ${response.Usage}
 
 ${screenshot}
 ## License
-${response.License}
+${licenseList}
 ## Credits/Contributors
 ${response.Credits}
 ## Testing
