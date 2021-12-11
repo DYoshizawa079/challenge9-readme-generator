@@ -18,7 +18,7 @@ You can use this application from your local machine to generate a README.MD fil
 
 ![](/usage_sample.png)
 
-![](usage_demo.mp4)
+[Click here](https://drive.google.com/drive/u/0/folders/1umfg1dALp3-c6v4f79TF6eAqsRm_wMg_) to download an MP4 video that demonstrates how it's used.
 ## License
 No License
 ## Credits/Contributors
