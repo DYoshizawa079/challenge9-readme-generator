@@ -15,7 +15,7 @@ This is a Node.js app that generates a Github README.MD file by prompting you wi
 The app requires a Node.js environment with the inquirer package preinstalled. Aside from that, it requires the app's index.js file downloaded to the root folder.
 ## Usage
 You can use this application from your local machine to generate a README.MD file for any project that you would like to post on Github. 
-[!(/usage_sample.png)]
+[![](/usage_sample.png)]
 
 ## License
 GNU General Public v2.0, GNU General Public v3.0
