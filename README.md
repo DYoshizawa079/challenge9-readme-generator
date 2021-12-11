@@ -18,7 +18,9 @@ You can use this application from your local machine to generate a README.MD fil
 
 ![](/usage_sample.png)
 
-![](/usage_demo.mp4)
+<video width="320" height="240" controls>
+  <source src="/usage_demo.mp4" type="video/mp4">
+</video>
 ## License
 No License
 ## Credits/Contributors
