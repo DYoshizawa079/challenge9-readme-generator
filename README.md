@@ -16,9 +16,9 @@ The app requires a Node.js environment with the inquirer package preinstalled. A
 ## Usage
 You can use this application from your local machine to generate a README.MD file for any project that you would like to post on Github. 
 
-[![](/usage_sample.png)]
+![](/usage_sample.png)
 
-![The app in use](/usage_sample.png)
+![](usage_demo.mp4)
 ## License
 No License
 ## Credits/Contributors
@@ -27,5 +27,5 @@ Created by Daniel Yoshizawa
 Testing can be done on a local Node.js environment that has the inquirer package installed. Enter "node index.js" in the command line to run the app.
 ## Questions
 If you have any further questions, please contact the author at:
-- Email: [sfd](mailto:daniely079@gmail.com)
+- Email: [daniely079@gmail.com](mailto:daniely079@gmail.com)
 - Github URL: [https://github.com/DYoshizawa079](https://github.com/DYoshizawa079)
