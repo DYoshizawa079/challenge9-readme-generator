@@ -1,5 +1,5 @@
 # Github Readme Generator
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) 
 ## Description
 This is a Node.js app that generates a Github README.MD file by prompting you with a series of input questions. These questions are prompted via the command line interface. Essentially, the app fills a template that contains all of the essential content sections for a Github README.MD file.
 
@@ -18,7 +18,7 @@ You can use this application from your local machine to generate a README.MD fil
 
 ![The app in use](/usage_sample.png)
 ## License
-ISC, Mozilla Public License 2.0, GNU General Public v2.0
+MIT, ISC, Mozilla Public License 2.0
 ## Credits/Contributors
 Daniel
 ## Testing
