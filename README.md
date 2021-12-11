@@ -16,7 +16,7 @@ The app requires a Node.js environment with the inquirer package preinstalled. A
 ## Usage
 You can use this application from your local machine to generate a README.MD file for any project that you would like to post on Github. 
 
-
+![The app in use](/usage_sample.png)
 ## License
 GNU General Public v2.0, GNU General Public v3.0
 ## Credits/Contributors
